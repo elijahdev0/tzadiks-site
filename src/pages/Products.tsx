@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Shield, Clock, Users, DollarSign, Star } from 'lucide-react';
@@ -177,7 +178,7 @@ const Products = () => {
                   <div className="flex flex-col gap-4">
                     <div className="text-center mb-4">
                       <p className="text-lg text-oneshot-light">מחיר מיוחד</p>
-                      <p className="text-4xl font-bold text-oneshot-gold">₪1,499</p>
+                      <p className="text-4xl font-bold text-oneshot-gold">₪1,999</p>
                       <p className="text-sm text-oneshot-light mt-1">כולל הכשרה מעשית</p>
                     </div>
                     

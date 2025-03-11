@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Shield } from 'lucide-react';
+import { Shield, Award, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -45,20 +46,50 @@ const Hero = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
+        <div className="flex flex-col md:flex-row gap-4 justify-center mb-10">
           <Button 
             onClick={scrollToContact}
             className="cta-button bg-oneshot-red text-xl py-6 px-10 font-bold animate-pulse-gold"
           >
             השאירו פרטים עכשיו!
           </Button>
-          <Button 
-            variant="outline" 
-            className="border-oneshot-gold text-oneshot-gold hover:bg-oneshot-gold/10 hover:text-white text-xl py-6 px-10 font-bold"
-            onClick={() => document.getElementById('soldier-offer')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            הצעה מיוחדת לחיילים משוחררים
-          </Button>
+          <Link to="/products">
+            <Button
+              className="bg-oneshot-gold text-oneshot-dark hover:bg-oneshot-gold/90 text-xl py-6 px-10 font-bold"
+            >
+              לצפייה במסלולים שלנו
+            </Button>
+          </Link>
+        </div>
+        
+        {/* Premium Product Highlight */}
+        <div className="bg-oneshot-gray/40 p-6 rounded-lg border border-oneshot-gold/30 max-w-3xl mx-auto mb-10">
+          <div className="flex items-center justify-center mb-3">
+            <Award className="w-10 h-10 text-oneshot-gold mr-2" />
+            <h3 className="text-2xl font-bold text-oneshot-gold">חבילת הפרימיום שלנו</h3>
+          </div>
+          <p className="text-xl mb-4">
+            קבל רישיון לנשק באופן מיידי עם ליווי VIP לאורך כל התהליך, כולל הכשרה מעשית וייעוץ אישי!
+          </p>
+          <div className="flex justify-between items-center max-w-md mx-auto py-2 px-4 bg-black/30 rounded-lg mb-4">
+            <span className="text-2xl font-bold text-oneshot-gold">₪1,999</span>
+            <span className="text-lg">כולל הכשרה מעשית ושיעור ירי ראשון</span>
+          </div>
+          <Link to="/products">
+            <Button 
+              className="bg-oneshot-gold text-oneshot-dark hover:bg-oneshot-gold/90 text-lg py-3 px-6"
+            >
+              לחבילת הפרימיום המלאה
+            </Button>
+          </Link>
+        </div>
+        
+        {/* Fast Process Highlight */}
+        <div className="flex items-center justify-center gap-3 bg-oneshot-red/20 p-4 rounded-lg max-w-lg mx-auto mb-8">
+          <Clock className="w-8 h-8 text-oneshot-red" />
+          <p className="text-xl font-semibold">
+            לא מחכים! מתחילים מיד בתהליך - <Link to="/products" className="text-oneshot-gold underline">לכל המסלולים</Link>
+          </p>
         </div>
       </div>
     </div>

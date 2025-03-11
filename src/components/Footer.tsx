@@ -1,8 +1,14 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
+  const scrollToContact = () => {
+    window.location.href = '/#contact-form';
+  };
+
   return (
     <footer className="bg-black text-white py-12 px-4">
       <div className="container mx-auto">
@@ -14,6 +20,27 @@ const Footer = () => {
                 alt="One Shot Logo" 
                 className="h-16 md:h-20" 
               />
+            </div>
+            
+            {/* Quick CTA in Footer */}
+            <div className="mt-4 flex flex-col items-center md:items-start">
+              <Button
+                onClick={scrollToContact}
+                className="bg-oneshot-red text-white hover:bg-red-800 mb-2"
+                size="sm"
+              >
+                <span>צרו קשר עכשיו</span>
+                <ArrowRight className="size-3" />
+              </Button>
+              <Link to="/products">
+                <Button
+                  variant="outline"
+                  className="border-oneshot-gold text-oneshot-gold hover:bg-oneshot-gold/10"
+                  size="sm"
+                >
+                  לצפייה במסלולים
+                </Button>
+              </Link>
             </div>
           </div>
           
@@ -76,6 +103,19 @@ const Footer = () => {
           >
             <Instagram className="h-6 w-6 text-oneshot-gold" />
           </a>
+        </div>
+        
+        {/* Products Quick Links */}
+        <div className="flex justify-center gap-6 mb-8 flex-wrap">
+          <Link to="/products" className="bg-oneshot-gray/40 hover:bg-oneshot-gray/60 px-4 py-2 rounded-md text-oneshot-gold font-semibold transition-colors">
+            מסלול רגיל - ₪999
+          </Link>
+          <Link to="/products" className="bg-oneshot-gray/40 hover:bg-oneshot-gray/60 px-4 py-2 rounded-md text-oneshot-gold font-semibold transition-colors">
+            חבילת פרימיום - ₪1,999
+          </Link>
+          <Link to="/products" className="bg-oneshot-gray/40 hover:bg-oneshot-gray/60 px-4 py-2 rounded-md text-oneshot-gold font-semibold transition-colors">
+            מסלול לחיילים משוחררים
+          </Link>
         </div>
         
         <div className="border-t border-oneshot-gold/20 pt-8 text-center">
