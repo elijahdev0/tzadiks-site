@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle, Shield, Clock, Users, DollarSign } from 'lucide-react';
+import { ArrowRight, CheckCircle, Shield, Clock, Users, DollarSign, Star } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Footer from '@/components/Footer';
 
@@ -59,7 +58,7 @@ const Products = () => {
             transition={{ duration: 0.5 }}
             className="max-w-5xl mx-auto"
           >
-            <div className="bg-oneshot-gray rounded-2xl overflow-hidden shadow-2xl border border-oneshot-gold/20">
+            <div className="bg-oneshot-gray rounded-2xl overflow-hidden shadow-2xl border border-oneshot-gold/20 mb-10">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Product Image */}
                 <div className="relative h-80 md:h-full overflow-hidden">
@@ -119,6 +118,74 @@ const Products = () => {
                       className="bg-oneshot-red hover:bg-red-800 text-white text-xl py-6 px-6 rounded-lg w-full animate-pulse-gold"
                     >
                       <span>להתחיל את התהליך</span>
+                      <ArrowRight />
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Second Product - Premium Package */}
+            <div className="bg-oneshot-gray rounded-2xl overflow-hidden shadow-2xl border border-oneshot-gold/20 mb-10">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                {/* Product Image */}
+                <div className="relative h-80 md:h-full overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/703f2906-0db8-43f1-bae1-8be8fcf4dd6a.png" 
+                    alt="חבילת פרימיום" 
+                    className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-oneshot-dark/80"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <span className="inline-block bg-oneshot-gold px-4 py-2 rounded-md font-bold text-black">
+                      חבילת פרימיום
+                    </span>
+                  </div>
+                </div>
+                
+                {/* Product Details */}
+                <div className="p-8">
+                  <h2 className="text-3xl font-bold text-oneshot-gold mb-4">
+                    חבילת פרימיום מורחבת
+                  </h2>
+                  <p className="mb-6 text-oneshot-light">
+                    קבל רישיון לנשק באופן מיידי עם ליווי VIP לאורך כל התהליך, כולל הכשרה מתקדמת!
+                  </p>
+                  
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">החבילה כוללת:</h3>
+                    <ul className="space-y-3">
+                      <li className="flex items-center gap-2 text-lg">
+                        <Star className="text-oneshot-gold shrink-0" />
+                        <span>טיפול VIP - עדיפות ראשונה בתור</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-lg">
+                        <Star className="text-oneshot-gold shrink-0" />
+                        <span>הכשרה מעשית - שיעור ירי ראשון</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-lg">
+                        <Star className="text-oneshot-gold shrink-0" />
+                        <span>ליווי אישי ע"י יועץ בכיר</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-lg">
+                        <Star className="text-oneshot-gold shrink-0" />
+                        <span>הדרכה מקיפה לבחירת נשק מתאים</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div className="flex flex-col gap-4">
+                    <div className="text-center mb-4">
+                      <p className="text-lg text-oneshot-light">מחיר מיוחד</p>
+                      <p className="text-4xl font-bold text-oneshot-gold">₪1,499</p>
+                      <p className="text-sm text-oneshot-light mt-1">כולל הכשרה מעשית</p>
+                    </div>
+                    
+                    <Button 
+                      onClick={scrollToContact}
+                      className="bg-oneshot-gold hover:bg-amber-600 text-oneshot-dark text-xl py-6 px-6 rounded-lg w-full animate-pulse-gold"
+                    >
+                      <span>שדרג לפרימיום</span>
                       <ArrowRight />
                     </Button>
                   </div>
@@ -256,7 +323,7 @@ const Products = () => {
                 </div>
                 <div className="bg-oneshot-gray/50 p-6 rounded-lg text-center">
                   <h4 className="text-xl font-bold text-oneshot-gold mb-2">רישיון כפול</h4>
-                  <p>מסלול ייחודי המאפשר קבלת רישיון לנשק ולאקדח</p>
+                  <p>מס��ול ייחודי המאפשר קבלת רישיון לנשק ולאקדח</p>
                 </div>
               </div>
             </div>

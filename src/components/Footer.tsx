@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -54,6 +54,28 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+        </div>
+        
+        {/* Social Media Links */}
+        <div className="flex justify-center space-x-6 mb-8">
+          <a 
+            href="https://facebook.com/oneshot" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-oneshot-gold/20 hover:bg-oneshot-gold/40 p-3 rounded-full transition-colors"
+            aria-label="Facebook"
+          >
+            <Facebook className="h-6 w-6 text-oneshot-gold" />
+          </a>
+          <a 
+            href="https://instagram.com/oneshot" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-oneshot-gold/20 hover:bg-oneshot-gold/40 p-3 rounded-full transition-colors"
+            aria-label="Instagram"
+          >
+            <Instagram className="h-6 w-6 text-oneshot-gold" />
+          </a>
         </div>
         
         <div className="border-t border-oneshot-gold/20 pt-8 text-center">
