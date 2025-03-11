@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				oneshot: {
+					'dark': '#121212',
+					'green': '#1a472a',
+					'red': '#b71c1c',
+					'gold': '#d4af37',
+					'gray': '#333333',
+					'light': '#f5f5f5'
 				}
+			},
+			fontFamily: {
+				heebo: ['Heebo', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +96,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-gold': {
+					'0%, 100%': {
+						boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.7)'
+					},
+					'50%': {
+						boxShadow: '0 0 0 10px rgba(212, 175, 55, 0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-gold': 'pulse-gold 2s infinite'
+			},
+			backgroundImage: {
+				'camo-pattern': "url('/public/lovable-uploads/aa8d0e19-9331-4fd5-b69c-92746a798ade.png')",
+				'logo': "url('/public/lovable-uploads/b82dfbed-9b46-4941-a723-31bff58602a2.png')",
+				'gun-gray': "url('/public/lovable-uploads/703f2906-0db8-43f1-bae1-8be8fcf4dd6a.png')",
 			}
 		}
 	},

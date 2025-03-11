@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +99,31 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-oneshot-dark text-oneshot-light font-heebo;
+    direction: rtl;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heebo font-bold;
+  }
+}
+
+.camo-bg {
+  background-color: #121212;
+  background-image: url('/lovable-uploads/aa8d0e19-9331-4fd5-b69c-92746a798ade.png');
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-button {
+  @apply bg-oneshot-red text-white font-bold py-3 px-6 rounded-md hover:bg-red-800 transition-all duration-300 shadow-lg;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-6 text-oneshot-gold;
+}
+
+.benefit-card {
+  @apply bg-oneshot-gray rounded-lg p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px];
 }
