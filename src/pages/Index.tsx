@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
 import Hero from '@/components/Hero';
 import Benefits from '@/components/Benefits';
 import SoldierOffer from '@/components/SoldierOffer';
@@ -10,6 +12,16 @@ import Footer from '@/components/Footer';
 const Index = () => {
   return (
     <div className="min-h-screen bg-oneshot-dark text-white" dir="rtl">
+      <div className="container mx-auto py-4 px-4 flex justify-end">
+        <Link to="/products">
+          <Button
+            variant="outline"
+            className="border-oneshot-gold text-oneshot-gold hover:bg-oneshot-gold/10"
+          >
+            המסלולים שלנו
+          </Button>
+        </Link>
+      </div>
       <Hero />
       <Benefits />
       <div 
@@ -25,6 +37,13 @@ const Index = () => {
             גר בסביבה לא בטוחה? רוצה להגן על המשפחה?
             <br />אנחנו מקצרים לך את הדרך לרישיון נשק – בלי כאבי ראש ובלי סיבוכים!
           </p>
+          <div className="mt-8">
+            <Link to="/products">
+              <Button className="bg-oneshot-gold text-oneshot-dark hover:bg-oneshot-gold/90 text-lg py-3 px-6">
+                לצפייה במסלולים שלנו
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
       <SoldierOffer />
