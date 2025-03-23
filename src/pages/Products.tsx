@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Shield, Clock, Users, DollarSign, Star } from 'lucide-react';
@@ -82,7 +81,7 @@ const Products = () => {
                     מסלול רגיל - רישיון לנשק
                   </h2>
                   <p className="mb-6 text-oneshot-light">
-                    קבל רישיון לנשק עד 7 ימי עסקים בלבד! בליווי מקצועי מלא מהרישום ועד האישור.
+                    קבל רישיון לנשק עד 14 ימי עסקים בלבד! בליווי מקצועי מלא מהרישום ועד האישור.
                   </p>
                   
                   <div className="mb-8">
@@ -98,13 +97,20 @@ const Products = () => {
                       </li>
                       <li className="flex items-center gap-2 text-lg">
                         <CheckCircle className="text-oneshot-gold shrink-0" />
-                        <span>עד 7 ימי עסקים לקבלת האישור</span>
+                        <span>עד 14 ימי עסקים לקבלת האישור</span>
                       </li>
                       <li className="flex items-center gap-2 text-lg">
                         <CheckCircle className="text-oneshot-gold shrink-0" />
                         <span>הכנה לראיון ותמיכה בתהליך</span>
                       </li>
                     </ul>
+                  </div>
+                  
+                  <div className="bg-oneshot-dark/70 p-4 rounded-lg mb-6 border border-oneshot-gold/20">
+                    <p className="text-oneshot-light text-center">
+                      💡 גר בסביבה לא בטוחה? רוצה להגן על המשפחה?<br/>
+                      אנחנו מקצרים לך את הדרך לרישיון נשק – בלי כאבי ראש ובלי סיבוכים!
+                    </p>
                   </div>
                   
                   <div className="flex flex-col gap-4">
@@ -150,7 +156,7 @@ const Products = () => {
                     חבילת פרימיום מורחבת
                   </h2>
                   <p className="mb-6 text-oneshot-light">
-                    קבל רישיון לנשק באופן מיידי עם ליווי VIP לאורך כל התהליך, כולל הכשרה מתקדמת!
+                    הדרך המהירה, הבטוחה והמשתלמת ביותר לרישיון נשק!🔥
                   </p>
                   
                   <div className="mb-8">
@@ -158,35 +164,50 @@ const Products = () => {
                     <ul className="space-y-3">
                       <li className="flex items-center gap-2 text-lg">
                         <Star className="text-oneshot-gold shrink-0" />
-                        <span>טיפול VIP - עדיפות ראשונה בתור</span>
+                        <span>רישיון לנשק עד 14 ימי עסקים בלבד!</span>
                       </li>
                       <li className="flex items-center gap-2 text-lg">
                         <Star className="text-oneshot-gold shrink-0" />
-                        <span>הכשרה מעשית - שיעור ירי ראשון</span>
+                        <span>תשלום רק לאחר קבלת הרישיון!</span>
                       </li>
                       <li className="flex items-center gap-2 text-lg">
                         <Star className="text-oneshot-gold shrink-0" />
-                        <span>ליווי אישי ע"י יועץ בכיר</span>
+                        <span>ליווי אישי של אחד ממשרדי עורכי הדין הגדולים בארץ</span>
                       </li>
                       <li className="flex items-center gap-2 text-lg">
                         <Star className="text-oneshot-gold shrink-0" />
-                        <span>הדרכה מקיפה לבחירת נשק מתאים</span>
+                        <span>מקסימום ביטחון, מינימום בירוקרטיה</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-lg">
+                        <Star className="text-oneshot-gold shrink-0" />
+                        <span>מתאים למי ששירת בצבא</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-lg">
+                        <Star className="text-oneshot-gold shrink-0" />
+                        <span>מתמודדים גם עם ערעורים וסירובים של בקשות</span>
                       </li>
                     </ul>
+                  </div>
+                  
+                  <div className="bg-oneshot-dark/70 p-4 rounded-lg mb-6 border border-oneshot-gold/20">
+                    <p className="text-oneshot-light text-center">
+                      💡 גר בסביבה לא בטוחה? רוצה להגן על המשפחה?<br/>
+                      אנחנו מקצרים לך את הדרך לרישיון נשק – בלי כאבי ראש ובלי סיבוכים!
+                    </p>
                   </div>
                   
                   <div className="flex flex-col gap-4">
                     <div className="text-center mb-4">
                       <p className="text-lg text-oneshot-light">מחיר מיוחד</p>
-                      <p className="text-4xl font-bold text-oneshot-gold">₪1,999</p>
-                      <p className="text-sm text-oneshot-light mt-1">כולל הכשרה מעשית</p>
+                      <p className="text-4xl font-bold text-oneshot-gold">₪1,599</p>
+                      <p className="text-sm text-oneshot-light mt-1">תשלום רק לאחר קבלת הרישיון!</p>
                     </div>
                     
                     <Button 
                       onClick={scrollToContact}
                       className="bg-oneshot-gold hover:bg-amber-600 text-oneshot-dark text-xl py-6 px-6 rounded-lg w-full animate-pulse-gold"
                     >
-                      <span>שדרג לפרימיום</span>
+                      <span>השאירו פרטים עכשיו</span>
                       <ArrowRight />
                     </Button>
                   </div>
@@ -202,7 +223,7 @@ const Products = () => {
                     <Clock className="w-12 h-12 text-oneshot-gold" />
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-oneshot-gold text-center">תהליך מהיר</h3>
-                  <p className="text-gray-300 text-center">עד 7 ימי עסקים בלבד - המהיר ביותר בישראל</p>
+                  <p className="text-gray-300 text-center">עד 14 ימי עסקים בלבד - המהיר ביותר בישראל</p>
                 </div>
                 <div className="benefit-card">
                   <div className="flex justify-center mb-4">
@@ -223,7 +244,7 @@ const Products = () => {
                     <DollarSign className="w-12 h-12 text-oneshot-gold" />
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-oneshot-gold text-center">מחיר משתלם</h3>
-                  <p className="text-gray-300 text-center">רק 999 ₪ - השקעה קטנה לביטחון ארוך טווח</p>
+                  <p className="text-gray-300 text-center">רק 1,599 ₪ - השקעה קטנה לביטחון ארוך טווח</p>
                 </div>
               </div>
             </div>
@@ -273,7 +294,7 @@ const Products = () => {
                       </li>
                       <li className="flex items-center gap-2 text-lg">
                         <CheckCircle className="text-oneshot-gold shrink-0" />
-                        <span>תהליך מהיר – עד 7 ימי עסקים בלבד</span>
+                        <span>תהליך מהיר – עד 14 ימי עסקים בלבד</span>
                       </li>
                       <li className="flex items-center gap-2 text-lg">
                         <CheckCircle className="text-oneshot-gold shrink-0" />
@@ -324,7 +345,7 @@ const Products = () => {
                 </div>
                 <div className="bg-oneshot-gray/50 p-6 rounded-lg text-center">
                   <h4 className="text-xl font-bold text-oneshot-gold mb-2">רישיון כפול</h4>
-                  <p>מס��ול ייחודי המאפשר קבלת רישיון לנשק ולאקדח</p>
+                  <p>מסלול ייחודי המאפשר קבלת רישיון לנשק ולאקדח</p>
                 </div>
               </div>
             </div>

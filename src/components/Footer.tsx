@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, ArrowRight } from 'lucide-react';
+import { Phone, Mail, ArrowRight, Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 
@@ -44,42 +43,18 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-right">
-            <div>
-              <h3 className="text-oneshot-gold font-bold text-xl mb-4">צרו קשר</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center justify-end">
-                  <span className="ml-2">054-1234567</span>
-                  <Phone className="h-5 w-5 text-oneshot-gold" />
-                </li>
-                <li className="flex items-center justify-end">
-                  <span className="ml-2">info@one-shot.co.il</span>
-                  <Mail className="h-5 w-5 text-oneshot-gold" />
-                </li>
-                <li className="flex items-center justify-end">
-                  <span className="ml-2">רחוב הביטחון 1, תל אביב</span>
-                  <MapPin className="h-5 w-5 text-oneshot-gold" />
-                </li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-oneshot-gold font-bold text-xl mb-4">שעות פעילות</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center justify-end">
-                  <span className="ml-2">א'-ה': 9:00-18:00</span>
-                  <Clock className="h-5 w-5 text-oneshot-gold" />
-                </li>
-                <li className="flex items-center justify-end">
-                  <span className="ml-2">ו': 9:00-13:00</span>
-                  <Clock className="h-5 w-5 text-oneshot-gold" />
-                </li>
-                <li className="flex items-center justify-end">
-                  <span className="ml-2">מענה טלפוני 24/7</span>
-                  <Phone className="h-5 w-5 text-oneshot-gold" />
-                </li>
-              </ul>
-            </div>
+          <div className="text-right">
+            <h3 className="text-oneshot-gold font-bold text-xl mb-4">צרו קשר</h3>
+            <ul className="space-y-3">
+              <li className="flex items-center justify-end">
+                <a href="tel:0537124171" className="ml-2 hover:text-oneshot-gold transition-colors">0537124171</a>
+                <Phone className="h-5 w-5 text-oneshot-gold" />
+              </li>
+              <li className="flex items-center justify-end">
+                <a href="mailto:Orel7139@gmail.com" className="ml-2 hover:text-oneshot-gold transition-colors">Orel7139@gmail.com</a>
+                <Mail className="h-5 w-5 text-oneshot-gold" />
+              </li>
+            </ul>
           </div>
         </div>
         
@@ -111,7 +86,7 @@ const Footer = () => {
             מסלול רגיל - ₪999
           </Link>
           <Link to="/products" className="bg-oneshot-gray/40 hover:bg-oneshot-gray/60 px-4 py-2 rounded-md text-oneshot-gold font-semibold transition-colors">
-            חבילת פרימיום - ₪1,999
+            חבילת פרימיום - ₪1,599
           </Link>
           <Link to="/products" className="bg-oneshot-gray/40 hover:bg-oneshot-gray/60 px-4 py-2 rounded-md text-oneshot-gold font-semibold transition-colors">
             מסלול לחיילים משוחררים

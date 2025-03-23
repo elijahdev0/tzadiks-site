@@ -1,10 +1,17 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Shield, Award, Clock } from 'lucide-react';
+import { Shield, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
+  const scrollToProducts = () => {
+    // Scroll to the products section
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
+  
   const scrollToContact = () => {
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -22,21 +29,21 @@ const Hero = () => {
           <span className="text-oneshot-gold">הדרך המהירה</span> לרישיון נשק
         </h1>
         <h2 className="text-2xl md:text-3xl mb-8 text-oneshot-light">
-          רק <span className="text-oneshot-red font-bold">7 ימי עסקים</span> - מינימום בירוקרטיה
+          רק <span className="text-oneshot-red font-bold">14 ימי עסקים</span> - מינימום בירוקרטיה
         </h2>
         
         <div className="bg-black/60 p-6 rounded-lg mb-10 max-w-2xl mx-auto">
           <ul className="text-lg mb-8 space-y-4 text-right">
             <li className="flex items-center justify-end gap-2">
-              <span>רישיון לנשק עד 7 ימי עסקים בלבד!</span>
+              <span>רישיון לנשק עד 14 ימי עסקים בלבד!</span>
               <span className="text-oneshot-gold text-2xl">✓</span>
             </li>
             <li className="flex items-center justify-end gap-2">
-              <span>במחיר נוח – רק 999 ₪!</span>
+              <span>במחיר נוח החל מ-999 ₪!</span>
               <span className="text-oneshot-gold text-2xl">✓</span>
             </li>
             <li className="flex items-center justify-end gap-2">
-              <span>ליווי אישי מהשלב הראשון ועד קבלת הרישיון</span>
+              <span>תשלום רק לאחר קבלת הרישיון בחבילת הפרימיום!</span>
               <span className="text-oneshot-gold text-2xl">✓</span>
             </li>
             <li className="flex items-center justify-end gap-2">
@@ -46,50 +53,25 @@ const Hero = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center mb-10">
+        <div className="flex flex-col md:flex-row gap-4 justify-center mb-8">
           <Button 
             onClick={scrollToContact}
             className="cta-button bg-oneshot-red text-xl py-6 px-10 font-bold animate-pulse-gold"
           >
             השאירו פרטים עכשיו!
           </Button>
-          <Link to="/products">
-            <Button
-              className="bg-oneshot-gold text-oneshot-dark hover:bg-oneshot-gold/90 text-xl py-6 px-10 font-bold"
-            >
-              לצפייה במסלולים שלנו
-            </Button>
-          </Link>
+          <Button
+            onClick={scrollToProducts}
+            className="bg-oneshot-gold text-oneshot-dark hover:bg-oneshot-gold/90 text-xl py-6 px-10 font-bold"
+          >
+            לצפייה במסלולים שלנו
+          </Button>
         </div>
         
-        {/* Premium Product Highlight */}
-        <div className="bg-oneshot-gray/40 p-6 rounded-lg border border-oneshot-gold/30 max-w-3xl mx-auto mb-10">
-          <div className="flex items-center justify-center mb-3">
-            <Award className="w-10 h-10 text-oneshot-gold mr-2" />
-            <h3 className="text-2xl font-bold text-oneshot-gold">חבילת הפרימיום שלנו</h3>
-          </div>
-          <p className="text-xl mb-4">
-            קבל רישיון לנשק באופן מיידי עם ליווי VIP לאורך כל התהליך, כולל הכשרה מעשית וייעוץ אישי!
-          </p>
-          <div className="flex justify-between items-center max-w-md mx-auto py-2 px-4 bg-black/30 rounded-lg mb-4">
-            <span className="text-2xl font-bold text-oneshot-gold">₪1,999</span>
-            <span className="text-lg">כולל הכשרה מעשית ושיעור ירי ראשון</span>
-          </div>
-          <Link to="/products">
-            <Button 
-              className="bg-oneshot-gold text-oneshot-dark hover:bg-oneshot-gold/90 text-lg py-3 px-6"
-            >
-              לחבילת הפרימיום המלאה
-            </Button>
-          </Link>
-        </div>
-        
-        {/* Fast Process Highlight */}
-        <div className="flex items-center justify-center gap-3 bg-oneshot-red/20 p-4 rounded-lg max-w-lg mx-auto mb-8">
-          <Clock className="w-8 h-8 text-oneshot-red" />
-          <p className="text-xl font-semibold">
-            לא מחכים! מתחילים מיד בתהליך - <Link to="/products" className="text-oneshot-gold underline">לכל המסלולים</Link>
-          </p>
+        {/* Scroll Indicator */}
+        <div className="mt-6 animate-bounce cursor-pointer" onClick={scrollToProducts}>
+          <div className="text-oneshot-gold text-sm mb-2">לחץ לצפייה במסלולים</div>
+          <ChevronDown className="w-8 h-8 text-oneshot-gold mx-auto" />
         </div>
       </div>
     </div>
