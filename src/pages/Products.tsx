@@ -18,12 +18,8 @@ const Products = () => {
   return (
     <div className="min-h-screen bg-oneshot-dark text-white" dir="rtl">
       {/* Hero Section */}
-      <div 
-        className="py-16 bg-cover bg-center relative"
-        style={{ backgroundImage: "url('/lovable-uploads/703f2906-0db8-43f1-bae1-8be8fcf4dd6a.png')" }}
-      >
-        <div className="absolute inset-0 bg-black/70" />
-        <div className="container mx-auto relative z-10 px-4 text-center">
+      <div className="py-16 bg-oneshot-gray">
+        <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-6 text-oneshot-gold">
             מוצרים ומסלולים
           </h1>
@@ -59,24 +55,12 @@ const Products = () => {
             className="max-w-5xl mx-auto"
           >
             <div className="bg-oneshot-gray rounded-2xl overflow-hidden shadow-2xl border border-oneshot-gold/20 mb-10">
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                {/* Product Image */}
-                <div className="relative h-80 md:h-full overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/aa8d0e19-9331-4fd5-b69c-92746a798ade.png" 
-                    alt="רישיון נשק רגיל" 
-                    className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-oneshot-dark/80"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <span className="inline-block bg-oneshot-red px-4 py-2 rounded-md font-bold">
-                      המסלול המבוקש ביותר!
-                    </span>
-                  </div>
+              <div className="relative p-8">
+                <div className="bg-oneshot-red px-4 py-2 absolute top-0 right-0 m-4 rounded-md font-bold z-10">
+                  המסלול המבוקש ביותר!
                 </div>
                 
-                {/* Product Details */}
-                <div className="p-8">
+                <div className="mt-12">
                   <h2 className="text-3xl font-bold text-oneshot-gold mb-4">
                     מסלול רגיל - רישיון לנשק
                   </h2>
@@ -134,24 +118,16 @@ const Products = () => {
 
             {/* Second Product - Premium Package */}
             <div className="bg-oneshot-gray rounded-2xl overflow-hidden shadow-2xl border border-oneshot-gold/20 mb-10">
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                {/* Product Image */}
-                <div className="relative h-80 md:h-full overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/703f2906-0db8-43f1-bae1-8be8fcf4dd6a.png" 
-                    alt="חבילת פרימיום" 
-                    className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-oneshot-dark/80"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <span className="inline-block bg-oneshot-gold px-4 py-2 rounded-md font-bold text-black">
-                      חבילת פרימיום
-                    </span>
-                  </div>
+              <div className="relative p-8">
+                <div className="bg-oneshot-gold px-4 py-2 absolute top-0 right-0 m-4 rounded-md font-bold text-black z-10">
+                  חבילת פרימיום
                 </div>
                 
-                {/* Product Details */}
-                <div className="p-8">
+                <div className="absolute top-4 left-4 bg-oneshot-gold text-oneshot-dark px-3 py-1 rounded-full text-sm font-bold z-10">
+                  מומלץ!
+                </div>
+                
+                <div className="mt-12">
                   <h2 className="text-3xl font-bold text-oneshot-gold mb-4">
                     חבילת פרימיום מורחבת
                   </h2>
@@ -260,24 +236,12 @@ const Products = () => {
             className="max-w-5xl mx-auto"
           >
             <div className="bg-oneshot-gray rounded-2xl overflow-hidden shadow-2xl border border-oneshot-gold/20">
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                {/* Product Image */}
-                <div className="relative h-80 md:h-full overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/b82dfbed-9b46-4941-a723-31bff58602a2.png" 
-                    alt="רישיון נשק לחיילים משוחררים" 
-                    className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-oneshot-dark/80"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <span className="inline-block bg-oneshot-green px-4 py-2 rounded-md font-bold">
-                      מסלול לחיילים משוחררים
-                    </span>
-                  </div>
+              <div className="relative p-8">
+                <div className="bg-oneshot-green px-4 py-2 absolute top-0 right-0 m-4 rounded-md font-bold z-10">
+                  מסלול לחיילים משוחררים
                 </div>
                 
-                {/* Product Details */}
-                <div className="p-8">
+                <div className="mt-12">
                   <h2 className="text-3xl font-bold text-oneshot-gold mb-4">
                     מסלול לחיילים משוחררים
                   </h2>
