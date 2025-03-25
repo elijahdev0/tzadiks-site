@@ -14,7 +14,7 @@ const SoldierOffer = () => {
       <div 
         className="absolute inset-0 z-0 opacity-20"
         style={{
-          backgroundImage: "url('/lovable-uploads/aa8d0e19-9331-4fd5-b69c-92746a798ade.png')",
+          backgroundImage: "url('/images/camo-pattern.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

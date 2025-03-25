@@ -15,9 +15,9 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <div className="flex items-center justify-center md:justify-start">
               <img 
-                src="/lovable-uploads/b82dfbed-9b46-4941-a723-31bff58602a2.png" 
-                alt="One Shot Logo" 
-                className="h-16 md:h-20" 
+                src="/images/logo.png"
+                alt="One Shot Logo"
+                className="h-12 w-auto"
               />
             </div>
             

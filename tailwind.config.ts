@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -112,9 +111,9 @@ export default {
 				'pulse-gold': 'pulse-gold 2s infinite'
 			},
 			backgroundImage: {
-				'camo-pattern': "url('/public/lovable-uploads/aa8d0e19-9331-4fd5-b69c-92746a798ade.png')",
-				'logo': "url('/public/lovable-uploads/b82dfbed-9b46-4941-a723-31bff58602a2.png')",
-				'gun-gray': "url('/public/lovable-uploads/703f2906-0db8-43f1-bae1-8be8fcf4dd6a.png')",
+				'camo-pattern': "url('/images/camo-pattern.png')",
+				'logo': "url('/images/logo.png')",
+				'gun-gray': "url('/images/gun-gray.png')",
 			}
 		}
 	},
