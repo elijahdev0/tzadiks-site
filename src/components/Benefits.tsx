@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Clock, Shield, Users, DollarSign } from 'lucide-react';
 
@@ -7,7 +6,7 @@ const Benefits = () => {
     {
       icon: <Clock className="w-12 h-12 text-oneshot-gold mb-4" />,
       title: "תהליך מהיר",
-      description: "עד 7 ימי עסקים בלבד - המהיר ביותר בישראל"
+      description: "עד 14 ימי עסקים בלבד - המהיר ביותר בישראל"
     },
     {
       icon: <Shield className="w-12 h-12 text-oneshot-gold mb-4" />,

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
@@ -39,7 +38,7 @@ const SoldierOffer = () => {
                 <span className="text-oneshot-gold text-2xl">✓</span>
               </li>
               <li className="flex items-center justify-end gap-2">
-                <span>תהליך מהיר – עד 7 ימי עסקים בלבד</span>
+                <span>תהליך מהיר – עד 14 ימי עסקים בלבד</span>
                 <span className="text-oneshot-gold text-2xl">✓</span>
               </li>
               <li className="flex items-center justify-end gap-2">
